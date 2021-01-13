@@ -1,12 +1,28 @@
+:root {
+  --dark-grey: #252525;
+  --grey: #414141;
+  --medium-grey: #636363;
+  --light-grey: #A3A3A3;
+  --green: #6CB841;
+  --orange: #F6682A;
+  --body-back-one: rgba(0, 0, 0, 0.9);
+  --body-back-two: rgba(0, 0, 0, 0.7);
+  --body-back-three: rgba(0, 0, 0, 0.5);
+  --image-back-one: rgba(46, 46, 46, 0.9);
+  --image-back-two: rgba(46, 46, 46, 0.7);
+  --image-back-three: rgba(46, 46, 46, 0.6);
+}
+
+
 body {
-  background-color: #414141;
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.9) 0%, rgba(0, 0, 0, 0.7) 50%, rgba(0, 0, 0, 0.5) 100%);
+  background-color: var(--grey);
+  background: linear-gradient(to bottom, var(--body-back-one) 0%, var(--body-back-two) 50%, var(--body-back-three) 100%);
   background-repeat: no-repeat;
   background-size: cover;
 }
 
 .home {
-  background: linear-gradient(to bottom, rgba(46, 46, 46, 0.9) 0%, rgba(46, 46, 46, 0.7) 50%, rgba(46, 46, 46, 0.6) 100%), url("../img/background.png");
+  background: linear-gradient(to bottom, var(--image-back-one) 0%, var(--image-back-two) 50%, var(--image-back-three) 100%), url("../img/background.png");
   overflow-x: hidden;
   background-position: center;
   background-repeat: no-repeat;
@@ -29,16 +45,40 @@ h2 {
   color: black;
 }
 
+.light-grey-text {
+  color: var(--light-grey);
+}
+
+.grey-text {
+  color: var(--grey);
+}
+
+.white-link {
+  color: white;
+}
+
+.white-link:hover {
+  color: var(--green);
+}
+
 .green-back {
-  background-color: #6CB841;
+  background-color: var(--green);
 }
 
 .green-font {
-  color: #6CB841;
+  color: var(--green);
 }
 
 .grey-back {
-  background-color: #636363;
+  background-color: var(--medium-grey);
+}
+
+ul.light-grey-ul li {
+  color: var(--light-grey);
+}
+
+.left-border {
+  border-left: solid 5px var(--green);
 }
 
 .header-div {
@@ -66,7 +106,7 @@ h2 {
   height: 8em;
   text-align: center;
   border-radius: 4em;
-  background: #636363;
+  background: var(--medium-grey);
   margin: 0 2em;
   display: inline-block;
   position: relative;
@@ -77,7 +117,7 @@ h2 {
 }
 
 .home li a:hover {
-  color: #6CB841;
+  color: var(--green);
 }
 
 .home li::before{
@@ -87,23 +127,18 @@ h2 {
   left: -5em;
   width: 6em;
   height: 1em;
-  background: #636363;
+  background: var(--medium-grey);
   z-index: -1;
 }
 
-
 .home li:first-child::before {
-  display: none;
-}
-
-.home li:first-child::after {
   content: '';
   position: absolute;
   top: -287px;
   left: 3.5em;
   width: 1em;
   height: 18em;
-  background: linear-gradient(to bottom, #6CB841 0%, #636363 100%);
+  background: linear-gradient(to bottom, var(--green) 0%, var(--medium-grey) 100%);
   z-index: -1;
 }
 
@@ -117,19 +152,11 @@ h2 {
   border-left: none;
 }
 
-.boxes a {
-  color: white;
-}
-
-.boxes a:hover {
-  color: #6CB841;
-}
-
 .boxes p {
   font-size: 18px;
 }
 
-.fa-angle-right {
+.boxes .fa-angle-right {
   font-size: 3em;
 }
 
@@ -138,11 +165,11 @@ h2 {
 }
 
 .small-header a {
-  color: #636363;
+  color: var(--medium-grey);
 }
 
 .small-header a:hover {
-  color: #6CB841;
+  color: var(--green);
 }
 
 .small-header a {
@@ -158,15 +185,17 @@ h2 {
 }
 
 .fa-angle-left:hover {
-  color: #6CB841;
+  color: var(--green);
 }
 
 .green-hover:hover {
-  color: #6CB841 !important;
+  color: var(--green) !important;
 }
 
 .back-button {
-  background-color: #636363;
+  background-color: var(--medium-grey);
+  height: 50px;
+  width: 50px;
 }
 
 .nav-icon {
@@ -183,19 +212,43 @@ h2 {
   position: relative;
 }
 
-/* .bow-nav li h5 {
-  position:absolute;
-  left:0;
-  right:0;
-} */
-
 .nav-font-div {
-  width: 150px;
+  width: 130px;
+}
+
+.nav-one {
+  position: relative;
+  left: -37px;
+}
+
+.nav-two {
+  position: relative;
+  left: -21px;
+}
+
+.nav-three {
+  position: relative;
+  left: -16px;
+}
+
+.nav-four {
+  position: relative;
+  left: -1px;
+}
+
+.nav-five {
+  position: relative;
+  left: -1px;
+}
+
+.nav-six {
+  position: relative;
+  left: -14px;
 }
 
 .bow-nav li a:hover,
 .bow-nav li a.text-white:hover {
-  color: #6CB841;
+  color: var(--green);
 }
 
 .bow-nav li::before{
@@ -205,7 +258,7 @@ h2 {
   left: -11em;
   width: 11em;
   height: 3px;
-  background: #636363;
+  background: var(--medium-grey);
   z-index: -1;
 }
 
@@ -221,6 +274,6 @@ h2 {
   left: -11em;
   width: 11em;
   height: 3px;
-  background: linear-gradient(to right, #414141 0%, #6CB841 100%);
+  background: linear-gradient(to right, var(--grey) 0%, var(--green) 100%);
   z-index: -1;
 }
