@@ -432,3 +432,9 @@ ul.box-ul {
     font-size: 110px;
   }
 }
+
+@media only screen and (max-width: 1350px) {
+  .buy .xl-font {
+    font-size: 90px;
+  }
+}
