@@ -37,6 +37,10 @@ h2 {
   font-size: 10em;
 }
 
+.box-header {
+  font-size: 50px;
+}
+
 .xl-font {
   font-size: 142px;
 }
@@ -281,6 +285,33 @@ ul.light-grey-ul li {
   background: linear-gradient(to right, var(--grey) 0%, var(--green) 100%);
   z-index: -1;
 }
+
+/* stevens edits */
+
+ul.box-ul {
+  padding-left: 20px;
+  line-height: 30px;
+}
+
+.buy-box {
+  height: 550px;
+}
+
+.initial {
+  line-height: 40px;
+}
+
+
+.marketing {
+  background: linear-gradient(to right, var(--image-background) 0%, var(--image-background) 100%), url("../img/marketing.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+
+/* end stevens edits */
+
 
 @media only screen and (min-width: 1180px) {
   .roadmap-icon {
