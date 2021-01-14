@@ -282,3 +282,16 @@ ul.light-grey-ul li {
   background: linear-gradient(to right, var(--grey) 0%, var(--green) 100%);
   z-index: -1;
 }
+
+
+/* Steven's edit's */
+.buy-main {
+  font-family: ProximaNovaCond;
+}
+.marketing {
+  color: #FFFFFF;
+  font-size: 86px;
+  line-height: 65px;
+  width: 279px;
+  text-align: left;
+}
