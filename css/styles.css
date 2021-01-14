@@ -9,24 +9,33 @@
 }
 
 @font-face {
-  font-family: "proximaNova";
-  src: url("./proxima-nova.ttf")
+  font-family: "proximaNovaBold";
+  src: url("./proxima-nova-bold.ttf")
+}
+
+@font-face {
+  font-family: "proximaNovaReg";
+  src: url("./proxima-nova-reg.ttf")
 }
 
 body {
   background-color: var(--dark-grey);
   background-repeat: no-repeat;
   background-size: cover;
-  font-family: "proximaNova";
+  font-family: "proximaNovaBold";
+}
+
+.nova-reg {
+  font-family: "proximaNovaReg"
 }
 
 .home {
   background: linear-gradient(to right, var(--image-background) 0%, var(--image-background) 100%), url("../img/background.png");
-  /* background: url("../img/background.png"); */
   overflow-x: hidden;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  background-attachment: fixed;
 }
 
 h1 {
@@ -99,6 +108,44 @@ ul.light-grey-ul li {
 
 .page-box .fa-angle-right {
   font-size: 100px;
+}
+
+.internal .page-box {
+  height: 265px;
+  width: 100%;
+}
+
+.internal-line {
+  content: '';
+  min-width: 50px !important;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  border-radius: 25px;
+  margin-right: 1em;
+  display: inline-block;
+  position: relative;
+  background-color: var(--grey);
+}
+
+.internal-line::before{
+  content: '';
+  position: absolute;
+  top: 45%;
+  left: 45%;
+  width: 5px;
+  height: 220px;
+  background: var(--grey);
+}
+
+.internal-line.upper::after {
+  content: '';
+  position: absolute;
+  top: -50px;
+  left: 45%;
+  width: 5px;
+  height: 220px;
+  background: var(--grey);
 }
 
 .roadmap-icon {
@@ -202,6 +249,17 @@ ul.light-grey-ul li {
   width: 50px;
 }
 
+.internal-box .back-button {
+  background-color: var(--green);
+  margin-top: 59px;
+  margin-right: 0.5em;
+  font-size: 30px;
+}
+
+.internal-box .back-button:hover {
+  background-color: var(--medium-grey);
+}
+
 .nav-icon {
   font-size: 20px;
 }
@@ -280,6 +338,18 @@ ul.light-grey-ul li {
   height: 3px;
   background: linear-gradient(to right, var(--grey) 0%, var(--green) 100%);
   z-index: -1;
+}
+
+.internal .fa-list,
+.internal .fa-comment,
+.internal .fa-id-card,
+.internal .fa-calendar {
+  color: var(--medium-grey);
+  font-size: 30px;
+}
+
+.internal .green-font .fa-id-card {
+  color: var(--green);
 }
 
 @media only screen and (min-width: 1180px) {
