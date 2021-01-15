@@ -218,6 +218,10 @@ ul.light-grey-ul li {
   font-size: 18px;
 }
 
+.boxes-big p {
+  font-size: 24px;
+}
+
 .boxes .fa-angle-right {
   font-size: 3em;
 }
@@ -264,6 +268,11 @@ ul.light-grey-ul li {
   background-color: var(--green);
   margin-top: 59px;
   margin-right: 0.5em;
+  font-size: 30px;
+}
+
+.sales-box .back-button {
+  background-color: var(--green);
   font-size: 30px;
 }
 
@@ -401,6 +410,29 @@ ul.box-ul {
   background-color: var(--medium-grey);
   color: white;
 }
+
+.smooth-where {
+  background: linear-gradient(to right, var(--image-background) 0%, var(--image-background) 100%), url("../img/where.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.smooth-who {
+  background: linear-gradient(to right, var(--image-background) 0%, var(--image-background) 100%), url("../img/who.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.smooth-key {
+  background: linear-gradient(to right, var(--image-background) 0%, var(--image-background) 100%), url("../img/key.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
 
 /* end stevens edits */
 
