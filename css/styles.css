@@ -439,6 +439,13 @@ ul.box-ul {
   background-size: cover;
 }
 
+.offer-tac {
+  background: linear-gradient(to right, var(--image-background) 0%, var(--image-background) 100%), url("../img/tac.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 .boxes-big a {
   color: var(--green);
   text-decoration: none;
