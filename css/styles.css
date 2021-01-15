@@ -218,6 +218,10 @@ ul.light-grey-ul li {
   font-size: 18px;
 }
 
+.boxes-big p {
+  font-size: 24px;
+}
+
 .boxes .fa-angle-right {
   font-size: 3em;
 }
@@ -264,6 +268,11 @@ ul.light-grey-ul li {
   background-color: var(--green);
   margin-top: 59px;
   margin-right: 0.5em;
+  font-size: 30px;
+}
+
+.sales-box .back-button {
+  background-color: var(--green);
   font-size: 30px;
 }
 
@@ -378,15 +387,74 @@ ul.box-ul {
   line-height: 50px;
 }
 
-
 .marketing {
   background: linear-gradient(to right, var(--image-background) 0%, var(--image-background) 100%), url("../img/marketing.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-
 }
 
+.sales {
+  background: linear-gradient(to right, var(--image-background) 0%, var(--image-background) 100%), url("../img/sales.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.sales-links p {
+  font-size: 32px;
+  padding-left: 10px;
+}
+
+.sales-links p:hover {
+  background-color: var(--medium-grey);
+  color: white;
+}
+
+.smooth-where {
+  background: linear-gradient(to right, var(--image-background) 0%, var(--image-background) 100%), url("../img/where.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.smooth-who {
+  background: linear-gradient(to right, var(--image-background) 0%, var(--image-background) 100%), url("../img/who.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.smooth-key {
+  background: linear-gradient(to right, var(--image-background) 0%, var(--image-background) 100%), url("../img/key.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.smooth-mat {
+  background: linear-gradient(to right, var(--image-background) 0%, var(--image-background) 100%), url("../img/mat.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.offer-tac {
+  background: linear-gradient(to right, var(--image-background) 0%, var(--image-background) 100%), url("../img/tac.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.boxes-big a {
+  color: var(--green);
+  text-decoration: none;
+}
+
+.boxes-big a:hover {
+  color: var(--grey);
+  text-decoration: none;
+}
 /* end stevens edits */
 
 @media only screen and (min-width: 1180px) {
@@ -435,6 +503,36 @@ ul.box-ul {
 
 @media only screen and (max-width: 1350px) {
   .buy .xl-font {
-    font-size: 90px;
+    font-size: 100px;
+  }
+}
+
+@media only screen and (max-width: 1140px) {
+  .buy .xl-font {
+    font-size: 85px;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .buy .xl-font {
+    font-size: 68px;
+  }
+}
+
+@media only screen and (max-width: 880px) {
+  .buy .marketing {
+    padding-left: 0px !important;
+  }
+}
+
+@media only screen and (max-width: 930px) {
+  .box-header {
+    margin-left: 0px !important;
+  }
+}
+
+@media only screen and (max-width: 840px) {
+  .smooth-mat {
+    padding: 0px !important;
   }
 }
