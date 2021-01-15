@@ -27,7 +27,12 @@ body {
 }
 
 .nova-reg {
-  font-family: "proximaNovaReg"
+  font-family: "proximaNovaReg";
+}
+
+.nova-bold {
+  font-family: "proximaNovaBold";
+  font-size: 25px;
 }
 
 .home {
