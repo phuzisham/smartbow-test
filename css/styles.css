@@ -432,8 +432,22 @@ ul.box-ul {
   background-size: cover;
 }
 
+.smooth-mat {
+  background: linear-gradient(to right, var(--image-background) 0%, var(--image-background) 100%), url("../img/mat.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 
+.boxes-big a {
+  color: var(--green);
+  text-decoration: none;
+}
 
+.boxes-big a:hover {
+  color: var(--grey);
+  text-decoration: none;
+}
 /* end stevens edits */
 
 @media only screen and (min-width: 1180px) {
@@ -501,5 +515,17 @@ ul.box-ul {
 @media only screen and (max-width: 880px) {
   .buy .marketing {
     padding-left: 0px !important;
+  }
+}
+
+@media only screen and (max-width: 930px) {
+  .box-header {
+    margin-left: 0px !important;
+  }
+}
+
+@media only screen and (max-width: 840px) {
+  .smooth-mat {
+    padding: 0px !important;
   }
 }
