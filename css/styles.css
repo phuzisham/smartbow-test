@@ -3,7 +3,7 @@
   --grey: #414141;
   --medium-grey: #636363;
   --light-grey: #A3A3A3;
-  --grey-bg: #F4F4F4;
+  --grey-bg; #F4F4F4;
   --green: #6CB841;
   --orange: #F6682A;
   --image-background: rgba(46, 46, 46, 0.8);
@@ -54,7 +54,6 @@ h2 {
 .xl-font {
   font-size: 125px;
   line-height: 100px;
-
 }
 
 .black-text {
@@ -126,6 +125,27 @@ ul.light-grey-ul li {
   width: 100%;
 }
 
+.bottom-page-box {
+  background-color: white;
+}
+
+.bottom-page-box .page-box {
+  height: 100%;
+  width: 100%;
+}
+
+.internal-spacer {
+  content: '';
+  min-width: 50px !important;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  margin-right: 1em;
+  display: inline-block;
+  position: relative;
+  background-color: white;
+}
+
 .internal-line {
   content: '';
   min-width: 50px !important;
@@ -149,13 +169,18 @@ ul.light-grey-ul li {
   background: var(--grey);
 }
 
+.internal-line.last::before {
+  background-color: white;
+  z-index: -1;
+}
+
 .internal-line.upper::after {
   content: '';
   position: absolute;
   top: -50px;
   left: 45%;
   width: 5px;
-  height: 220px;
+  height: 90px;
   background: var(--grey);
 }
 
@@ -262,7 +287,7 @@ ul.light-grey-ul li {
 
 .internal-box .back-button {
   background-color: var(--green);
-  margin-top: 59px;
+  margin-top: 10px;
   margin-right: 0.5em;
   font-size: 30px;
 }
@@ -363,7 +388,26 @@ ul.light-grey-ul li {
   color: var(--green);
 }
 
-/* stevens edits */
+.mobile img {
+  max-width: 100%;
+}
+
+.mobile .dark-button {
+  background-color: var(--dark-grey);
+  color: var(--medium-grey);
+  border-radius: 70px;
+  padding: 10px;
+  font-size: 1.2em;
+  width: 175px;
+  line-height: 35px;
+}
+
+.mobile .dark-button:hover {
+  background-color: var(--medium-grey);
+  color: var(--green);
+}
+
+/* SD edits */
 
 ul.box-ul {
   padding-left: 20px;
@@ -387,7 +431,7 @@ ul.box-ul {
 
 }
 
-/* end stevens edits */
+/* end SD edits */
 
 @media only screen and (min-width: 1180px) {
   .roadmap-icon {
@@ -434,6 +478,18 @@ ul.box-ul {
 }
 
 @media only screen and (max-width: 1350px) {
+  .internal .page-box {
+    height: 250px;
+  }
+
+  .internal-line::before {
+    height: 300px;
+  }
+
+  .internal h3 {
+    font-size: 1.25rem;
+  }
+
   .buy .xl-font {
     font-size: 90px;
   }
