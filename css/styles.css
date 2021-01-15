@@ -378,13 +378,28 @@ ul.box-ul {
   line-height: 50px;
 }
 
-
 .marketing {
   background: linear-gradient(to right, var(--image-background) 0%, var(--image-background) 100%), url("../img/marketing.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+}
 
+.sales {
+  background: linear-gradient(to right, var(--image-background) 0%, var(--image-background) 100%), url("../img/sales.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.sales-links p {
+  font-size: 32px;
+  padding-left: 10px;
+}
+
+.sales-links p:hover {
+  background-color: var(--medium-grey);
+  color: white;
 }
 
 /* end stevens edits */
@@ -435,6 +450,24 @@ ul.box-ul {
 
 @media only screen and (max-width: 1350px) {
   .buy .xl-font {
-    font-size: 90px;
+    font-size: 100px;
+  }
+}
+
+@media only screen and (max-width: 1140px) {
+  .buy .xl-font {
+    font-size: 85px;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .buy .xl-font {
+    font-size: 68px;
+  }
+}
+
+@media only screen and (max-width: 880px) {
+  .buy .marketing {
+    padding-left: 0px !important;
   }
 }
