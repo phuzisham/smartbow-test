@@ -81,6 +81,10 @@ h2 {
   color: var(--green);
 }
 
+.white-link .green-font:hover {
+  color: white;
+}
+
 .green-back {
   background-color: var(--green);
 }
@@ -276,6 +280,10 @@ ul.light-grey-ul li {
   font-size: 20px;
 }
 
+.bow-nav li.green-back a:hover {
+  color: white;
+}
+
 .fa-angle-left {
   color: black;
 }
@@ -452,12 +460,20 @@ ul.box-ul {
 
 .sales-links p {
   font-size: 32px;
+  line-height: 30px;
   padding-left: 10px;
 }
 
 .sales-links p:hover {
   background-color: var(--medium-grey);
   color: white;
+}
+
+.customer {
+  background: linear-gradient(to right, var(--image-background) 0%, var(--image-background) 100%), url("../img/customer.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .smooth-where {
